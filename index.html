@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+       <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <title>SPCODER </title>
+</head>
+
+
+<body class="bg-slate-900 scroll-smooth m-auto " style="font-family: 'Nunito', sans-serif;">
+    <nav class="flex  w-11/12 m-auto justify-between ">
+
+        <h1 class="logo text-slate-300/60 mt-5 text-2xl pl-2  font-semibold hover:cursor-pointer flex "
+            style="font-family: 'DM Serif Display', serif;">SPCODER</h1>
+
+        <div
+            class="mobile-nav hidden bg-gradient-to-r from-slate-800 to-slate-700 w-full sm:w-1/2  h-full mt-12 fixed right-0 z-10 rounded ">
+
+            <button type="button" onclick="closeNav(this)"
+                class=" nav-button absolute z-20 top-5 left-5 w-8 h-8 flex items-center justify-center text-slate-200 hover:text-orange-700 "
+                tabindex="0"><span class="sr-only">Close navigation</span><svg viewBox="0 0 10 10"
+                    class="w-2.5 h-2.5 overflow-visible">
+                    <path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round"></path>
+                </svg></button>
+            <div class="flex flex-col justify-between ">
+                <div
+                    class=" bg-gradient-to-r from-cyan-500/10 via-sky-500/5 to-blue-500/0 text-slate-100 w-11/12 mx-auto mt-20 rounded p-4 text-md uppercase">
+                    <a href="#about">
+                        <p
+                            class="m-4 border border-slate-700 hover:cursor-pointer hover:border-slate-600 hover:text-white pl-3 p-1 rounded ">
+                            about us</p>
+                    </a>
+                    <a href="#works">
+                        <p
+                            class="m-4 border border-slate-700 hover:cursor-pointer hover:border-slate-600 hover:text-white pl-3 p-1 rounded">
+                            our works</p>
+                    </a>
+                    <a href="#contact">
+                        <p
+                            class="m-4 border border-slate-700 hover:cursor-pointer hover:border-slate-600 hover:text-white pl-3 p-1  rounded">
+                            contact us</p>
+                    </a>
+                </div>
+                <div class="w-10/12 h-1/12 m-auto flex justify-between mt-20">
+                    <a href="mailto:SPCODER.DEV@GMAILCOM">
+                        <span class="material-symbols-outlined text-gray-500 w-1/4">
+                            alternate_email
+                        </span>
+                    </a>
+                    <a href="href=tel:+123456789">
+                        <span class="material-symbols-outlined text-gray-500">
+                            call
+
+                        </span>
+                        <a href="https://t.me/SPCODER_PRO">
+                            <span class="material-symbols-outlined text-gray-500">
+                                chat
+
+                            </span>
+
+
+
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-btn mt-6 mr-5 flex md:hidden">
+            <span class="material-symbols-outlined  text-slate-500 hover:text-slate-400 hover:cursor-pointer"
+                onclick="showNav()">
+                menu
+            </span>
+
+        </div>
+        <div class="md:flex flex-row-reverse text-white    rounded p-2 text-sm uppercase hidden">
+            <a href="#about">
+                <p class="m-4  hover:cursor-pointer  hover:text-blue-100 pl-3 p-1 rounded ">about us</p>
+            </a>
+            <a href="#works">
+                <p class="m-4  hover:cursor-pointer  hover:text-blue-100 pl-3 p-1 rounded">our works</p>
+            </a>
+            <a href="#contact">
+                <p class="m-4  hover:cursor-pointer  hover:text-blue-100 pl-3 p-1  rounded">contact us</p>
+            </a>
+
+        </div>
+
+    </nav>
+
+    
+    <div class="container w-full md:w-10/12 m-auto mt-5">
+
+        <section id="ab" class="m-auto rounded-md w-full relative bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500 text-white py-16">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between ">
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0 p-4 " >
+                    <div class="flex items-center justify-center md:justify-start mt-6">
+                        <p class="text-xl mr-2">Hi!</p>
+                        <img class="p-1"width="24px" src="images/Hi.svg" alt="Hi Icon">
+                    </div>
+                    <h2 class="text-4xl font-bold mb-4">Welcome to SPCODER Website</h2>
+                    <p class="text-lg">Explore the world of web development with us!</p>
+                    
+                </div>
+                <div class="md:w-1/2">
+                    <img class="w-full h-60 object-cover rounded-md hover:opacity-80" src="./images/headImg.jpg" alt="Header Image">
+                </div>
+            </div>
+        </section>
+        
+
+        
+
+        <section id="works" class="m-auto w-full py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8 text-white">Check out some of our works</h2>
+        
+                
+        
+                
+        </section>
+        <!-- Gallery Modal -->
+        <div id="galleryModal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+            <div class=" p-2 rounded-md ">
+                <img id="galleryImage" class="mb-5 rounded-md w-full h-full object-contain" src="" alt="Gallery Image">
+                <div class="flex justify-between items-end absolute top-0 left-0 right-0 bottom-10 w-10/12 m-auto">
+                    <button id="prevBtn" class="bg-gray-700 text-white px-4 py-2 rounded-md m-4" onclick="showPrevImage()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="bg-red-500 text-white px-4 py-2 rounded-md m-4" onclick="closeGallery()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <button id="nextBtn" class="bg-gray-700 text-white px-4 py-2 rounded-md m-4" onclick="showNextImage()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <section id="#works" class=" m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+            
+            
+            <div class=" p-1 rounded-md shadow-md" onclick="openGallery(1)">
+                <img src="images/img3.webp" alt="Image 1"
+                    class="galleryimg w-full h-48 object-cover rounded-md">
+            </div>
+            <div class=" p-1 rounded-md shadow-md" onclick="openGallery(2)">
+                <img src="images/img2.webp" alt="Image 2"
+                    class="galleryimg w-full h-48 object-cover rounded-md">
+            </div>
+            <div class=" p-1 rounded-md shadow-md" onclick="openGallery(3)">
+                <img src="images/img1.webp" alt="Image 3"
+                    class="galleryimg w-full h-48 object-cover rounded-md">
+            </div>
+            <div class=" p-1 rounded-md shadow-md" onclick="openGallery(4)">
+                <img src="images/img4.webp" alt="Image 4"
+                    class="galleryimg w-full h-48 object-cover rounded-md">
+            </div>
+
+
+            <!-- Add more images as needed -->
+
+        </section>
+        
+
+
+
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="w-full md:w-10/12 m-auto mt-4">
+            <div
+                class="flex flex-row justify-around bg-gradient-to-r from-cyan-500/0 via-sky-500/5 to-blue-500/0 p-4 rounded">
+                <div class="md:mt-5 text-center ">
+                    <a href="mailto:SPCODER.DEV@GMAIL.COM" class="text-white">
+                        <i class="fas fa-envelope fa-beat-fade text-xl"></i>
+                        <span class="ml-2 hidden md:block lg:block">Email</span>
+                    </a>
+                </div>
+                <div class="md:mt-5 text-center ">
+                    <a href="https://t.me/SPCODER_PRO" class="text-white">
+                        <i class="fab fa-telegram fa-beat-fade text-xl"></i>
+                        <span class="ml-2 hidden md:block lg:block">Telegram</span>
+                    </a>
+                </div>
+                <div class="md:mt-5 text-center ">
+                    <a href="#" class="text-white">
+                        <i class="fab fa-twitter fa-beat-fade text-xl"></i>
+                        <span class="ml-2 hidden md:block lg:block">Twitter</span>
+                    </a>
+                </div>
+                <div class="md:mt-5 text-center ">
+                    <a href="#" class="text-white">
+                        <i class="fab fa-facebook fa-beat-fade text-xl"></i>
+                        <span class="ml-2 hidden md:block lg:block ">Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-10 w-11/12 m-auto flex rounded">
+            <div class="m-auto flex mt-10 mb-5">
+                <p class="pr-2 text-slate-500 text-sm hover:cursor-pointer" href="mailto:SPCODER.DEV@GMAIL.COM">
+                    All Rights Reserved to
+                    <strong>
+                        SPCODER
+                    </strong>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7ee8fb5c03.js" crossorigin="anonymous"></script>
+</body>
+<script src="/js/main.js"></script>
+
+
+</body>
+
+</html>
